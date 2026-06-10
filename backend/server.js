@@ -10,7 +10,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: 'https://nexsoft-notes-app.vercel.app',
+  origin: 'https://nexsoft-notes-app-frontend.vercel.app',
   credentials: true
 }));
 app.use(express.json());
