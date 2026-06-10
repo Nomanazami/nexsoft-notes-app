@@ -19,7 +19,7 @@ const connectDB = async () => {
   try {
     // Attempt Mongoose connection with a quick timeout of 3s so the application doesn't hang
     await mongoose.connect(uri, {
-      serverSelectionTimeoutMS: 3000
+      serverSelectionTimeoutMS: 10000
     });
     console.log('✅ Connected to MongoDB via Mongoose.');
   } catch (err) {
